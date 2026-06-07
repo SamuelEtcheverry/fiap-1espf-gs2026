@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>OrbitalWatch — Monitoramento de Lixo Espacial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;700;800&family=Space+Mono&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="css/style.css" />
+  <link rel="stylesheet" href="css/themes.css" />
+</head>
+<body data-theme="dark">
+
+  <nav class="navbar" id="navbar">
+    <div class="container nav-inner">
+      <a href="#hero" class="logo">⬡ OrbitalWatch</a>
+      <ul class="nav-links" id="navLinks"></ul>
+      <div class="nav-right">
+        <div class="temas" id="temas">
+          <button class="tema-btn active" data-tema="dark" title="Escuro"></button>
+          <button class="tema-btn" data-tema="blue"  title="Azul"></button>
+          <button class="tema-btn" data-tema="green" title="Verde"></button>
+        </div>
+        <button class="hamburger" id="hamburger">☰</button>
+      </div>
+    </div>
+  </nav>
+
+  <section class="hero" id="hero">
+    <div class="slideshow">
+      <div class="slide slide-1 active"><img src="img/slide1.svg" alt="Terra com satélites e detritos orbitando" class="slide-img"/></div>
+      <div class="slide slide-2"><img src="img/slide2.svg" alt="Radar de monitoramento de detritos espaciais" class="slide-img"/></div>
+      <div class="slide slide-3"><img src="img/slide3.svg" alt="Órbitas concêntricas com alertas de colisão" class="slide-img"/></div>
+    </div>
+    <div class="hero-content">
+      <span class="tag">⬡ Global Solution 2026 · FIAP</span>
+      <h1>O espaço está<br><span class="destaque">em perigo.</span></h1>
+      <p>Mais de 140 milhões de detritos orbitam a Terra a 28.000 km/h.<br>OrbitalWatch monitora, analisa e alerta.</p>
+      <div class="hero-btns">
+        <a href="#solucao" class="btn">Conheça a solução</a>
+        <a href="#simulador" class="btn btn-outline">Simular risco</a>
+      </div>
+    </div>
+    <div class="dots">
+      <button class="dot active" data-slide="0"></button>
+      <button class="dot" data-slide="1"></button>
+      <button class="dot" data-slide="2"></button>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container footer-inner">
+      <div>
+        <strong class="logo">⬡ OrbitalWatch</strong>
+        <p>Sistema de Monitoramento e Alerta de Colisões com Lixo Espacial</p>
+        <p>© 2026 · FIAP Global Solution · Engenharia de Software · 1ESPF</p>
+      </div>
+      <div class="footer-equipe">
+        <h4>Equipe</h4>
+        <ul>
+          <li>Samuel Eduardo Lisboa Etcheverry · RM 573715</li>
+          <li>Brenda Priscila Chalco Condori · RM 571971</li>
+          <li>Diego Ruffini Silva Jimenez · RM 571015</li>
+          <li>Nicolly Florencio Vilela · RM 573392</li>
+        </ul>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/app.js"></script>
+  <script src="js/slideshow.js"></script>
+  <script src="js/quiz.js"></script>
+  <script src="js/simulator.js"></script>
+</body>
+</html>
