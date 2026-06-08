@@ -1,0 +1,115 @@
+[data-theme="dark"] {
+    --bg:          #0a0c10;
+    --bg-alt:      #0f1318;
+    --bg-card:     #131820;
+    --texto:       #e8ecf2;
+    --texto-sec:   #8892a4;
+    --texto-mudo:  #4a5568;
+    --borda:       rgba(255,255,255,0.08);
+    --acento:      #00d4ff;
+    --acento-claro:#66e5ff;
+    --acento-bg:   rgba(0,212,255,0.1);
+    --verde:       #2ed573;
+    --amarelo:     #ffa502;
+    --vermelho:    #ff4757;
+  }
+  
+  [data-theme="dark"] .slide-1 { background: url('../img/slide1.svg') center/cover no-repeat; }
+  [data-theme="dark"] .slide-2 { background: url('../img/slide2.svg') center/cover no-repeat; }
+  [data-theme="dark"] .slide-3 { background: url('../img/slide3.svg') center/cover no-repeat; }
+  
+  [data-theme="light"] {
+    --bg:          #f0f2f5;
+    --bg-alt:      #e2e6ed;
+    --bg-card:     #ffffff;
+    --texto:       #0d1117;
+    --texto-sec:   #3a4a5c;
+    --texto-mudo:  #8896a8;
+    --borda:       rgba(0,0,0,0.1);
+    --acento:      #0057b8;
+    --acento-claro:#2e82e8;
+    --acento-bg:   rgba(0,87,184,0.08);
+    --verde:       #1a8a3a;
+    --amarelo:     #b86200;
+    --vermelho:    #cc1a2a;
+  }
+  
+  [data-theme="light"] .slide-1 {
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(0,87,184,0.12) 0%, transparent 60%),
+      linear-gradient(135deg, #c8d8f0 0%, #e8f0fc 100%);
+  }
+  [data-theme="light"] .slide-2 {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(0,87,184,0.10) 0%, transparent 55%),
+      linear-gradient(135deg, #d0ddf0 0%, #eaf0ff 100%);
+  }
+  [data-theme="light"] .slide-3 {
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(0,60,160,0.10) 0%, transparent 70%),
+      linear-gradient(180deg, #c8d4ec 0%, #e4eeff 100%);
+  }
+  
+  [data-theme="light"] .navbar {
+    background: rgba(240,242,245,0.92);
+    border-bottom: 1px solid rgba(0,0,0,0.1);
+  }
+  [data-theme="light"] .navbar.scrolled {
+    background: rgba(240,242,245,0.99);
+  }
+  [data-theme="light"] .hero::before {
+    background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px);
+  }
+  [data-theme="light"] .dot {
+    background: rgba(0,0,0,0.2);
+  }
+  
+  [data-theme="blue"] {
+    --bg:          #05102a;
+    --bg-alt:      #081535;
+    --bg-card:     #0c1d45;
+    --texto:       #c8dcff;
+    --texto-sec:   #7090c8;
+    --texto-mudo:  #3a5080;
+    --borda:       rgba(80,130,255,0.15);
+    --acento:      #5b8fff;
+    --acento-claro:#94b8ff;
+    --acento-bg:   rgba(91,143,255,0.12);
+    --verde:       #3dd68c;
+    --amarelo:     #ffcc44;
+    --vermelho:    #ff5566;
+  }
+  
+  [data-theme="blue"] .slide-1 {
+    background:
+      radial-gradient(ellipse at 20% 50%, rgba(91,143,255,0.15) 0%, transparent 60%),
+      radial-gradient(ellipse at 80% 20%, rgba(120,80,255,0.08) 0%, transparent 50%),
+      linear-gradient(135deg, #020c22 0%, #071838 100%);
+  }
+  [data-theme="blue"] .slide-2 {
+    background:
+      radial-gradient(ellipse at 70% 30%, rgba(91,143,255,0.18) 0%, transparent 55%),
+      linear-gradient(135deg, #030e28 0%, #081830 100%);
+  }
+  [data-theme="blue"] .slide-3 {
+    background:
+      radial-gradient(ellipse at 50% 50%, rgba(60,100,240,0.18) 0%, transparent 70%),
+      linear-gradient(180deg, #030c20 0%, #071428 100%);
+  }
+  
+  [data-theme="blue"] .navbar {
+    background: rgba(5,16,42,0.88);
+    border-bottom: 1px solid rgba(80,130,255,0.2);
+  }
+  [data-theme="blue"] .navbar.scrolled {
+    background: rgba(5,16,42,0.98);
+  }
+  
+  .tema-btn[data-tema="dark"]  { background: #0a0c10; box-shadow: inset 0 0 0 1px #3a4050; }
+  .tema-btn[data-tema="light"] { background: #f0f2f5; box-shadow: inset 0 0 0 1px #8896a8; }
+  .tema-btn[data-tema="blue"]  { background: #05102a; box-shadow: inset 0 0 0 1px #5b8fff; }
+  
+  body, .navbar, .card, .secao, .footer, .quiz-box,
+  .sim-form, .sim-resultado, .form-contato {
+    transition: background-color 0.35s ease, color 0.35s ease, border-color 0.35s ease;
+  }
