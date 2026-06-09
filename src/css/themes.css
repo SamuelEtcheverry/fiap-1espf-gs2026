@@ -18,51 +18,6 @@
   [data-theme="dark"] .slide-2 { background: url('../img/slide2.svg') center/cover no-repeat; }
   [data-theme="dark"] .slide-3 { background: url('../img/slide3.svg') center/cover no-repeat; }
   
-  [data-theme="light"] {
-    --bg:          #f0f2f5;
-    --bg-alt:      #e2e6ed;
-    --bg-card:     #ffffff;
-    --texto:       #0d1117;
-    --texto-sec:   #3a4a5c;
-    --texto-mudo:  #8896a8;
-    --borda:       rgba(0,0,0,0.1);
-    --acento:      #0057b8;
-    --acento-claro:#2e82e8;
-    --acento-bg:   rgba(0,87,184,0.08);
-    --verde:       #1a8a3a;
-    --amarelo:     #b86200;
-    --vermelho:    #cc1a2a;
-  }
-  
-  [data-theme="light"] .slide-1 {
-    background:
-      radial-gradient(ellipse at 20% 50%, rgba(0,87,184,0.12) 0%, transparent 60%),
-      linear-gradient(135deg, #c8d8f0 0%, #e8f0fc 100%);
-  }
-  [data-theme="light"] .slide-2 {
-    background:
-      radial-gradient(ellipse at 70% 30%, rgba(0,87,184,0.10) 0%, transparent 55%),
-      linear-gradient(135deg, #d0ddf0 0%, #eaf0ff 100%);
-  }
-  [data-theme="light"] .slide-3 {
-    background:
-      radial-gradient(ellipse at 50% 50%, rgba(0,60,160,0.10) 0%, transparent 70%),
-      linear-gradient(180deg, #c8d4ec 0%, #e4eeff 100%);
-  }
-  
-  [data-theme="light"] .navbar {
-    background: rgba(240,242,245,0.92);
-    border-bottom: 1px solid rgba(0,0,0,0.1);
-  }
-  [data-theme="light"] .navbar.scrolled {
-    background: rgba(240,242,245,0.99);
-  }
-  [data-theme="light"] .hero::before {
-    background-image: radial-gradient(circle, rgba(0,0,0,0.06) 1px, transparent 1px);
-  }
-  [data-theme="light"] .dot {
-    background: rgba(0,0,0,0.2);
-  }
   
   [data-theme="blue"] {
     --bg:          #05102a;
@@ -106,7 +61,6 @@
   }
   
   .tema-btn[data-tema="dark"]  { background: #0a0c10; box-shadow: inset 0 0 0 1px #3a4050; }
-  .tema-btn[data-tema="light"] { background: #f0f2f5; box-shadow: inset 0 0 0 1px #8896a8; }
   .tema-btn[data-tema="blue"]  { background: #05102a; box-shadow: inset 0 0 0 1px #5b8fff; }
   
   body, .navbar, .card, .secao, .footer, .quiz-box,
