@@ -226,6 +226,9 @@
     opacity: 0;
     transition: opacity 1s;
   }
+  .slide.active {
+    opacity: 1;
+  }
   .slide-img { position: absolute; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
   
   .slide-1 { background: url('../img/slide1.svg') center/cover no-repeat; }
