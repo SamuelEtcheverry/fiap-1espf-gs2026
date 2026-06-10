@@ -34,6 +34,7 @@ document.getElementById('temas').addEventListener('click', function (e) {
 
 (function () {
   const temaSalvo = localStorage.getItem('ow-tema') || 'dark';
+  if (!['dark','blue','green'].includes(temaSalvo)) { localStorage.setItem('ow-tema','dark'); }
   document.body.setAttribute('data-theme', temaSalvo);
   document.querySelectorAll('.tema-btn').forEach(function (b) {
     b.classList.toggle('active', b.dataset.tema === temaSalvo);
